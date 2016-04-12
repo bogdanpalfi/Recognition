@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center|top"
+
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="bogdan.compalfi.facebook.httpswww.recognition.MainActivity"
@@ -13,35 +13,46 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RECOGNITION REMINDER"
-        android:textSize="20dp"
-        android:layout_gravity="center"
+        android:text="recognition "
+        android:textSize="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="left"
         android:paddingTop="50dp"
-        android:textColor="#D32F2F"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:fontFamily="Roboto"/>
    <Switch
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:text="Reminders "
+       android:text="Reminders are "
        android:id="@+id/reminderOnOff"
-       android:textSize="20dp"
+       android:layout_marginLeft="20dp"
+       android:textSize="30dp"
        android:paddingTop="50dp"
-       android:layout_gravity="center"
+       android:layout_gravity="left"
+       android:fontFamily="Roboto-thin"
        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:text="0 reminders per day"
-        android:layout_gravity="center"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
         android:id="@+id/nrOfReminders"
         android:paddingTop="70dp"
-        android:textSize="20dp"/>
+        android:textSize="30dp"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SETTINGS"
+        android:text="Edit settings."
+        android:textAllCaps="false"
         android:id="@+id/reminderSettings"
-        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
         android:onClick="startSettings"
-        android:layout_gravity="center"/>
+        android:layout_gravity="left|bottom"
+        android:gravity="left|bottom"
+        android:textSize="20dp"
+        android:layout_marginBottom="40dp" />
+
 </LinearLayout>
