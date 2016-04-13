@@ -11,7 +11,10 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="bogdan.compalfi.facebook.httpswww.recognition.SecondActivity"
     tools:showIn="@layout/activity_second">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
     <TextView
         android:layout_width="100dp"
         android:layout_height="wrap_content"
@@ -21,7 +24,17 @@
         android:paddingLeft="20dp"
         android:paddingTop="30dp"
         android:textStyle="bold"/>
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="done"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/done"
+        android:onClick="doneSettings"/>
+</LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,8 +49,8 @@
         android:orientation="horizontal">
 
         <Spinner
-            android:layout_width="80sp"
-            android:layout_height="40sp"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
             android:id="@+id/spinner1"
             android:paddingLeft="20dp"
             android:textSize="20sp"
@@ -58,63 +71,55 @@
         android:layout_height="wrap_content"
         android:paddingTop="30dp"
         android:layout_gravity="center">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="wrap_content"
-            android:text="From"
-            android:textSize="20dp"
-            android:paddingLeft="20dp"
-            />
 
-        <TimePicker
-            android:layout_width="267dp"
-            android:layout_height="206dp"
-            android:id="@+id/timePicker"
-            android:layout_gravity="right" />
 
     </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="from"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/fromTime" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="50dp"
+        android:textSize="20sp"
+        android:id="@+id/showFromTime" />
+</LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="30dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
-        <TextView
-            android:layout_width="80dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="To"
-            android:textSize="20dp"
-            android:paddingLeft="20dp"/>
-        <Spinner
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:id="@+id/spinner3Hour"
+            android:text="to"
+            android:textAllCaps="false"
             android:textSize="20sp"
-            android:layout_gravity="center_horizontal"
-            android:spinnerMode="dropdown"/>
+            android:layout_marginLeft="20dp"
+            android:id="@+id/toTime" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=":"
-            android:textSize="20dp"
-            android:paddingLeft="20dp"/>
-        <Spinner
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:id="@+id/spinner3Minute"
-            android:textSize="20sp"
-            android:layout_gravity="center_horizontal"
-            android:spinnerMode="dropdown"/>
+            android:text="00:00 AM"
+            android:layout_marginLeft="50dp"
+            android:textSize="20sp"/>
     </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Notification message:"
+        android:text="telling me to"
         android:textSize="20sp"
         android:paddingLeft="20dp"
-        android:paddingTop="40dp"
-        android:paddingBottom="20dp"/>
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"/>
     <EditText
         android:inputType="textMultiLine"
         android:lines="8"
@@ -123,20 +128,11 @@
         android:maxLines="3"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:text="Relax 2-5 seconds. Let go of all thoughts."
+        android:text="Take to 2-5 seconds to recognize that you exist. Let go of all thoughts."
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
-        android:scrollbars="vertical"/>
+        android:scrollbars="vertical"
+        />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="done"
-        android:textAllCaps="false"
-        android:id="@+id/done"
-        android:textSize="20dp"
 
-        android:paddingTop="0dp"
-        android:onClick="doneSettings"
-        android:layout_gravity="center"/>
 </LinearLayout>
